@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Project\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Dataset\CWRU\CWRU_train_A.txt" />
+    <None Include="wwwroot\Dataset\CWRU\CWRU_train_B.txt" />
+    <None Include="wwwroot\Dataset\CWRU\CWRU_train_C.txt" />
+    <None Include="wwwroot\Dataset\CWRU\CWRU_train_D.txt" />
+    <None Include="wwwroot\Project\DANN\.gitignore" />
+    <None Include="wwwroot\Project\DANN\CWRU_train_A.txt" />
+    <None Include="wwwroot\Project\DANN\CWRU_train_B.txt" />
+    <None Include="wwwroot\Project\DANN\CWRU_train_C.txt" />
+    <None Include="wwwroot\Project\DANN\CWRU_train_D.txt" />
+    <None Include="wwwroot\Project\DANN\dataloader.py" />
+    <None Include="wwwroot\Project\DANN\Dockerfile" />
+    <None Include="wwwroot\Project\DANN\functions.py" />
+    <None Include="wwwroot\Project\DANN\LICENSE" />
+    <None Include="wwwroot\Project\DANN\main.py" />
+    <None Include="wwwroot\Project\DANN\model.py" />
+    <None Include="wwwroot\Project\DANN\models\mnist_mnistm_model_epoch_current.pth" />
+    <None Include="wwwroot\Project\DANN\README.md" />
+    <None Include="wwwroot\Project\DANN\__pycache__\dataloader.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\dataloader.cpython-39.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\data_loader.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\data_loader.cpython-39.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\functions.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\functions.cpython-39.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\model.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\model.cpython-39.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\test.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\test.cpython-39.pyc" />
+  </ItemGroup>
+
+</Project>
