@@ -51,6 +51,9 @@ namespace CloudeDemmo.Controllers
 
 
         }
+        public IActionResult Refresh() {
+            return View();
+        }
         /// <summary>
         /// 异步运行python的方法
         /// </summary>
