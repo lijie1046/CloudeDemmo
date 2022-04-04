@@ -48,9 +48,11 @@ namespace CloudeDemmo.Controllers
 
             };
             return View(viewModel);
+            
 
 
         }
+        //刷新功能
         public IActionResult Refresh() {
             return View();
         }
