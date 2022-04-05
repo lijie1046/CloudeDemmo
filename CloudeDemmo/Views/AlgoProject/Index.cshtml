@@ -10,10 +10,9 @@
 }
 
 
-<html>
+
 <head>
-    <title></title>
-    <style type="text/css">
+    <style>
         .table {
             width: 100%;
             padding: 0;
@@ -61,31 +60,46 @@
         }
     </style>
 </head>
+<body>
+ <div class="container">
+<div class="row justify-content-center">
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center align-self-center text-intro">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        
+                        <table class="table" cellspacing="0" summary="The technical specifications of the Apple PowerMac G5 series">
+                            <tr>
+                                <th class="spec">ITEMNAME</th>
+                                <th>OWNER</th>
+                                <th>SHORTDESCRIPTION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                            @foreach (var algoProject in Model)
+                            {
+                                <tr>
+                                    <td class="spec"> @algoProject.ItemName</td>
+                                    <td>@algoProject.Owner</td>
+                                    <td class="alt">@algoProject.ShortDescription</td>
+                                    <td>
+                                            <a asp-controller="AlgoProject"
+                                                asp-action="Details"
+                                                asp-route-id="@algoProject.Id">Enter</a>
+                                    </td>
+                                </tr>
+                             }
+                        </table>
+                        <p data-aos="fade-up" data-aos-delay="200"><a class="btn smoothscroll btn-primary" asp-controller="AlgoProject" asp-action="TrainPage">算法添加</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="site-blocks-cover overlay bg-light" style="background-color:aquamarine !important; " id="home-section">
-    <table class="table" cellspacing="0" summary="The technical specifications of the Apple PowerMac G5 series">
-        <tr>
-            <th class="spec">ITEMNAME</th>
-            <th>OWNER</th>
-            <th>SHORTDESCRIPTION</th>
-            <th>DETAILS</th>
-        </tr>
-        @foreach (var algoProject in Model)
-        {
-            <tr>
-                <td class="spec"> @algoProject.ItemName</td>
-                <td>@algoProject.Owner</td>
-                <td class="alt">@algoProject.ShortDescription</td>
-                <td>
-                    <a asp-controller="AlgoProject"
-                       asp-action="Details"
-                       asp-route-id="@algoProject.Id">Enter</a>
-                </td>
-            </tr>
+</div>
+</div>
+ </body>
+    
 
-        }
 
-    </table>
- </div>
-
-</html>

@@ -3,20 +3,31 @@
 *@
 @model CloudeDemmo.ViewModels.DatasetDetailsViewModel
 
-@{
-}
+@{ }
 
-<h1>@Model.PageTitle</h1>
-<div>
-    ===============================================
-</div>
 
-<div>
-    ===============================================
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12 text-center align-self-center text-intro">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1>@Model.PageTitle</h1>
+                    <div>
+                        ===============================================
+                    </div>
+
+                    <div>
+                        ===============================================
+                    </div>
+                    <div>@Model.Dataset.DataName</div>
+                    <div>@Model.Dataset.Owner</div>
+                    <div>@Model.Dataset.Owner</div>
+                    <div>@Model.Dataset.ShortDescription</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div>@Model.Dataset.DataName</div>
-<div>@Model.Dataset.Owner</div>
-<div>@Model.Dataset.Owner</div>
-<div>@Model.Dataset.ShortDescription</div>
 
 

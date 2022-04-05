@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-master - 副本\\CloudeDemmo\\CloudeDemmo.csproj": {}
+    "C:\\Users\\kwlover\\Desktop\\wlks\\CloudeDemmo\\CloudeDemmo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-master - 副本\\CloudeDemmo\\CloudeDemmo.csproj": {
+    "C:\\Users\\kwlover\\Desktop\\wlks\\CloudeDemmo\\CloudeDemmo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-master - 副本\\CloudeDemmo\\CloudeDemmo.csproj",
+        "projectUniqueName": "C:\\Users\\kwlover\\Desktop\\wlks\\CloudeDemmo\\CloudeDemmo.csproj",
         "projectName": "CloudeDemmo",
-        "projectPath": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-master - 副本\\CloudeDemmo\\CloudeDemmo.csproj",
+        "projectPath": "C:\\Users\\kwlover\\Desktop\\wlks\\CloudeDemmo\\CloudeDemmo.csproj",
         "packagesPath": "C:\\Users\\kwlover\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-master - 副本\\CloudeDemmo\\obj\\",
+        "outputPath": "C:\\Users\\kwlover\\Desktop\\wlks\\CloudeDemmo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kwlover\\AppData\\Roaming\\NuGet\\NuGet.Config",

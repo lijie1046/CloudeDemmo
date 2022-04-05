@@ -7,53 +7,63 @@
 @{
 }
 
-<h1>添加数据库</h1>
 
-<div>=====================================</div>
-<form enctype="multipart/form-data" asp-controller="Dataset" asp-action="Create" method="post">
-    <div>
-        <input asp-for="Name" placeholder="请输入数据集名称（英文）" />
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center align-self-center text-intro">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>添加数据库</h1>
+
+                        <div>=====================================</div>
+                        <form enctype="multipart/form-data" asp-controller="Dataset" asp-action="Create" method="post">
+                            <div>
+                                <input asp-for="Name" placeholder="请输入数据集名称（英文）" />
+                            </div>
+                            <div>
+                                <input asp-for="Owner" placeholder="请输入用户名" />
+                            </div>
+                            <div>
+                                <input asp-for="ShortDescription" placeholder="请输入简介" />
+                            </div>
+                            <div>
+                                <input asp-for="LongDescription" placeholder="请输入长介绍" />
+                            </div>
+
+                            <div>
+                                <input asp-for="Sets" , multiple id=" gallery-input" />
+                            </div>
+
+                            <div>
+                                <button type="submit">提交</button>
+                            </div>
+                            @section Scripts{
+                                <script type="text/javascript">
+                                    $(document).ready(function () {
+                                        $('.custom-file-input').on('change', function () {
+                                            var fileName = $(this).val().split('\\').pop();
+                                            $(this).next('.custom-file-label').html(fileName);
+                                        });
+
+                                        $('#gallery-input').on('change', function () {
+                                            var label = $(this).next('#gallery-label');
+                                            var files = $(this)[0].files;
+                                            if (files.length > 1) {
+                                                label.html(`你已经选择了${files.length}个文件`);
+                                            } else if (files.length == 1) {
+                                                label.html(files[0].name);
+                                            }
+                                        });
+                                    });</script>
+                            }
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <input asp-for="Owner" placeholder="请输入用户名" />
-    </div>
-    <div>
-        <input asp-for="ShortDescription" placeholder="请输入简介" />
-    </div>
-    <div>
-        <input asp-for="LongDescription" placeholder="请输入长介绍" />
-    </div>
-
-    <div>
-        <input asp-for="Sets" , multiple id=" gallery-input" />
-    </div>
-
-    <div>
-        <button type="submit">提交</button>
-    </div>
 
 
 
-
-
-    @section Scripts{
-        <script type="text/javascript">
-    $(document).ready(function () {
-                $('.custom-file-input').on('change', function () {
-                    var fileName = $(this).val().split('\\').pop();
-                    $(this).next('.custom-file-label').html(fileName);
-                });
-
-                $('#gallery-input').on('change', function () {
-                    var label = $(this).next('#gallery-label');
-                    var files = $(this)[0].files;
-                    if (files.length > 1) {
-                        label.html(`你已经选择了${files.length}个文件`);
-                    } else if (files.length == 1) {
-                        label.html(files[0].name);
-                    }
-                });
-            });</script>
-    }
-</form>
 

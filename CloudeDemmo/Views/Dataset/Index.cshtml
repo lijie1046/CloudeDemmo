@@ -8,7 +8,7 @@
 }
 
 
-<html>
+
 <head>
     <title></title>
     <style type="text/css">
@@ -60,34 +60,45 @@
     </style>
 </head>
 
-<div class="site-blocks-cover overlay bg-light" style="background-color:aquamarine !important; " id="home-section">
-    
-    <table class="table" cellspacing="0" summary="The technical specifications of the Apple PowerMac G5 series">
-        <tr>
-            <th class="spec">ITEMNAME</th>
-            <th>OWNER</th>
-            <th>SHORTDESCRIPTION</th>
-            <th>DETAILS</th>
-        </tr>
-        @foreach (var dataset in Model)
-        {
-            <tr>
-                <td class="spec"> @dataset.DataName</td>
-                <td>@dataset.Owner</td>
-                <td class="alt">@dataset.ShortDescription</td>
-                <td>
-                    <a asp-controller="Dataset"
-                       asp-action="Details"
-                       asp-route-id="@dataset.Id">Enter</a>
-                </td>
-            </tr>
 
-        }
+<body>
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center align-self-center text-intro">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <table class="table" cellspacing="0" summary="The technical specifications of the Apple PowerMac G5 series">
+                            <tr>
+                                <th class="spec">ITEMNAME</th>
+                                <th>OWNER</th>
+                                <th>SHORTDESCRIPTION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                            @foreach (var dataset in Model)
+                            {
+                                 <tr>
+                                    <td class="spec"> @dataset.DataName</td>
+                                    <td>@dataset.Owner</td>
+                                    <td class="alt">@dataset.ShortDescription</td>
+                                    <td>
+                                        <a asp-controller="Dataset"
+                                            asp-action="Details"
+                                            asp-route-id="@dataset.Id">Enter</a>
+                                    </td>
+                                </tr>
+                             }
 
-    </table>
-    <a asp-controller="Dataset" asp-action="Create">添加数据集</a>
- </div>
+                        </table>
+                        <p data-aos="fade-up" data-aos-delay="200"><a class="btn smoothscroll btn-primary" asp-controller="AlgoProject" asp-action="TrainPage">添加数据集</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</body>
 
 
-</html>
+
+
 
