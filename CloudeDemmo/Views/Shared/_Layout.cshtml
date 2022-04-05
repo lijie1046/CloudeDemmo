@@ -1,0 +1,148 @@
+﻿@*<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - CloudeDemmo</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CloudeDemmo</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="AlgoProject" asp-action="Index">算法项目</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Dataset" asp-action="Index">数据集</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2022 - CloudeDemmo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </body>
+    </html>
+*@
+
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Services Free Template by cssmoban</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>@ViewData["Title"] - CloudeDemmo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="~/css/jquery-ui.css">
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/css/style2.css">
+    <link rel="stylesheet" href="~/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/css/flaticon.css">
+    <link rel="stylesheet" href="~/css/aos.css">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="adcenter">
+        <script src="http://www.baisheng999.com/include/new/ggad2_728x90.js"></script>
+    </div>
+
+    <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+
+    <div class="site-wrap">
+
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+        <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner" style="border-bottom-style: solid; border-bottom-width: 5px; border-bottom-color: aliceblue; ">
+
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="col-4">
+                        <h1 class="m-0 site-logo"><a href="登录.html">登录</a></h1>
+                    </div>
+
+                    <div class="col-8">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                                <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">主页</a></li>
+                                <li><a class="nav-link" asp-area="" asp-controller="AlgoProject" asp-action="Index">算法项目    </a></li>
+                                <li><a class="nav-link" asp-area="" asp-controller="Dataset" asp-action="Index">数据集</a></li>
+                                <li><a class="nav-link">成果部分截图</a></li>
+                                <li><a class="nav-link">团队成员</a></li>
+                                <!-- <li><a href="#contact-section" class="nav-link">Contact</a></li> -->
+                            </ul>
+                        </nav>
+
+
+                        <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </header>
+
+        @RenderBody()
+        <script src="~/js/jquery-3.3.1.min.js"></script>
+        <script src="~/js/jquery-ui.js"></script>
+        <script src="~/js/popper.min.js"></script>
+        <script src="~/js/bootstrap.min.js"></script>
+        <script src="~/js/owl.carousel.min.js"></script>
+        <script src="~/js/jquery.easing.1.3.js"></script>
+
+        <script src="~/js/jquery.fancybox.min.js"></script>
+        <script src="~/js/jquery.sticky.js"></script>
+        <script src="~/js/isotope.pkgd.min.js"></script>
+        <script src="~/js/aos.js"></script>
+
+        <script src="~/js/main.js"></script>
+
+        @RenderSection("Scripts", required: false)
+</body>

@@ -1,0 +1,77 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Project\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\.css" />
+    <None Include="wwwroot\css\.DS_Store" />
+    <None Include="wwwroot\css\aos.css" />
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\css\bootstrap.min1.css" />
+    <None Include="wwwroot\css\bootstrap\bootstrap-grid.css" />
+    <None Include="wwwroot\css\bootstrap\bootstrap-reboot.css" />
+    <None Include="wwwroot\css\bootstrap\bootstrap.css" />
+    <None Include="wwwroot\css\jquery-ui.css" />
+    <None Include="wwwroot\css\jquery.fancybox.min.css" />
+    <None Include="wwwroot\css\magnific-popup.css" />
+    <None Include="wwwroot\css\mediaelementplayer.css" />
+    <None Include="wwwroot\css\owl.carousel.min.css" />
+    <None Include="wwwroot\css\owl.theme.default.min.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\css\styles1.css" />
+    <None Include="wwwroot\Dataset\CWRU\CWRU_train_A.txt" />
+    <None Include="wwwroot\Dataset\CWRU\CWRU_train_B.txt" />
+    <None Include="wwwroot\Dataset\CWRU\CWRU_train_C.txt" />
+    <None Include="wwwroot\Dataset\CWRU\CWRU_train_D.txt" />
+    <None Include="wwwroot\js\aos.js" />
+    <None Include="wwwroot\js\bootstrap-datepicker.min.js" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\isotope.pkgd.min.js" />
+    <None Include="wwwroot\js\jquery-3.3.1.min.js" />
+    <None Include="wwwroot\js\jquery-migrate-3.0.1.min.js" />
+    <None Include="wwwroot\js\jquery-ui.js" />
+    <None Include="wwwroot\js\jquery.countdown.min.js" />
+    <None Include="wwwroot\js\jquery.easing.1.3.js" />
+    <None Include="wwwroot\js\jquery.fancybox.min.js" />
+    <None Include="wwwroot\js\jquery.magnific-popup.min.js" />
+    <None Include="wwwroot\js\jquery.stellar.min.js" />
+    <None Include="wwwroot\js\jquery.sticky.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\mediaelement-and-player.min.js" />
+    <None Include="wwwroot\js\owl.carousel.min.js" />
+    <None Include="wwwroot\js\popper.min.js" />
+    <None Include="wwwroot\js\slick.min.js" />
+    <None Include="wwwroot\js\typed.js" />
+    <None Include="wwwroot\Project\DANN\.gitignore" />
+    <None Include="wwwroot\Project\DANN\CWRU_train_A.txt" />
+    <None Include="wwwroot\Project\DANN\CWRU_train_B.txt" />
+    <None Include="wwwroot\Project\DANN\CWRU_train_C.txt" />
+    <None Include="wwwroot\Project\DANN\CWRU_train_D.txt" />
+    <None Include="wwwroot\Project\DANN\dataloader.py" />
+    <None Include="wwwroot\Project\DANN\Dockerfile" />
+    <None Include="wwwroot\Project\DANN\functions.py" />
+    <None Include="wwwroot\Project\DANN\LICENSE" />
+    <None Include="wwwroot\Project\DANN\main.py" />
+    <None Include="wwwroot\Project\DANN\model.py" />
+    <None Include="wwwroot\Project\DANN\models\mnist_mnistm_model_epoch_current.pth" />
+    <None Include="wwwroot\Project\DANN\README.md" />
+    <None Include="wwwroot\Project\DANN\__pycache__\dataloader.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\dataloader.cpython-39.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\data_loader.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\data_loader.cpython-39.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\functions.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\functions.cpython-39.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\model.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\model.cpython-39.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\test.cpython-37.pyc" />
+    <None Include="wwwroot\Project\DANN\__pycache__\test.cpython-39.pyc" />
+  </ItemGroup>
+
+</Project>
