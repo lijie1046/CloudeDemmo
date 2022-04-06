@@ -11,7 +11,9 @@
 <div>
     ===============================================
 </div>
-
+<a asp-controller="AlgoProject" asp-action="Refresh" asp-route-id=@Model.Id>刷新</a>
+<div>@Model.Id
+    </div>
 <div>
 @if (Model.Result != null)
 {

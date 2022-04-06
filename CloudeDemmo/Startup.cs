@@ -37,8 +37,8 @@ namespace CloudeDemmo
             services.AddMvc();
 
              
-            services.AddTransient<IDatasetRepository, MockDatasetRepository>();
-            services.AddTransient<IAlgoProjectRepository, MockAlgoProjectRepository>();
+            services.AddSingleton<IDatasetRepository, MockDatasetRepository>();
+            services.AddSingleton<IAlgoProjectRepository, MockAlgoProjectRepository>();
 
         }
 

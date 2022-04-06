@@ -7,6 +7,7 @@ namespace CloudeDemmo.ViewModels
 {
     public class TrainPageViewModel
     {
+        public int Id;
         public List<string> Result;
         public string PageTitle;
     }
