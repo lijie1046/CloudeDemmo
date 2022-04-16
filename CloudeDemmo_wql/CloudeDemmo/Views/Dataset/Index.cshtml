@@ -1,0 +1,101 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model IEnumerable<CloudeDemmo.Models.Dataset>
+
+@{ }
+
+
+
+<head>
+    <title></title>
+    <style type="text/css">
+        .table {
+            width: 100%;
+            padding: 0;
+        }
+
+        th {
+            font: bold 12px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+            color: #4f6b72;
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            border-top: 1px solid #C1DAD7;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: left;
+            padding: 6px 6px 6px 12px;
+            background: #CAE8EA no-repeat;
+        }
+
+        td {
+            border-right: 1px solid #C1DAD7;
+            border-bottom: 1px solid #C1DAD7;
+            background: #fff;
+            font-size: 14px;
+            padding: 6px 6px 6px 12px;
+            color: #4f6b72;
+        }
+
+            td.alt {
+                background: #F5FAFA;
+                color: #797268;
+            }
+
+            th.spec, td.spec {
+                border-left: 1px solid #C1DAD7;
+            }
+        /*---------for IE 5.x bug*/
+        html > body td {
+            font-size: 14px;
+        }
+
+        tr.select th, tr.select td {
+            background-color: #CAE8EA;
+            color: #797268;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center text-intro" style="margin-top:120px;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <table class="table" cellspacing="0" summary="The technical specifications of the Apple PowerMac G5 series">
+                            <tr>
+                                <th class="spec">ITEMNAME</th>
+                                <th>OWNER</th>
+                                <th>SHORTDESCRIPTION</th>
+                                <th>DETAILS</th>
+                            </tr>
+                            @foreach (var dataset in Model)
+                            {
+                <tr>
+                    <td class="spec"> @dataset.DataName</td>
+                    <td>@dataset.Owner</td>
+                    <td class="alt">@dataset.ShortDescription</td>
+                    <td>
+                        <a asp-controller="Dataset"
+                           asp-action="Details"
+                           asp-route-id="@dataset.Id">Enter</a>
+                    </td>
+                </tr>}
+
+                        </table>
+                        <p data-aos="fade-up" data-aos-delay="200"><a class="btn smoothscroll btn-primary" asp-controller="Dataset" asp-action="Create">添加数据集</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+
+
+
