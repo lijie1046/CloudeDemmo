@@ -9,7 +9,7 @@ namespace CloudeDemmo.Models
     {
         private List<Dataset> _datasets;
 
-        public MockDatasetRepository()
+        public MockDatasetRepository()//构造函数调用InitializeDataset()初始化数据库
         {
             if (_datasets == null)
             {
@@ -17,7 +17,7 @@ namespace CloudeDemmo.Models
             }
         }
 
-        private void InitializeDataset()
+        private void InitializeDataset()//初始化数据库
         {
             _datasets = new List<Dataset>
             {
@@ -25,7 +25,9 @@ namespace CloudeDemmo.Models
                 new Dataset{ Id = 2,DataName="数据2",Owner="用户1",ShortDescription="测试",LongDescription="无"}
             };
         }
-        public Dataset Add(Dataset dataset)
+
+        
+        public Dataset Add(Dataset dataset)//往dataset列表里面添加新的数据
         {
             dataset.Id = _datasets.Max(s => s.Id) + 1;
             _datasets.Add(dataset);
@@ -34,7 +36,7 @@ namespace CloudeDemmo.Models
 
         public Dataset Delet(int id)
         {
-            var dataset = _datasets.FirstOrDefault(s => s.Id == id);
+            var dataset = _datasets.FirstOrDefault(s => s.Id == id);//Lambda表达式，找到第一个ID位id的dataset，然后噶掉。
             if (dataset != null)
             {
                 _datasets.Remove(dataset);
@@ -46,7 +48,7 @@ namespace CloudeDemmo.Models
 
         public Dataset GetById(int id)
         {
-            return _datasets.FirstOrDefault(s => s.Id == id);
+            return _datasets.FirstOrDefault(s => s.Id == id);//Lambda表达式，返回第一个ID位id的dataset
         }
 
         public IEnumerable<Dataset> GetAll()

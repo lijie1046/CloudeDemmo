@@ -18,7 +18,7 @@ namespace CloudeDemmo.Controllers
 
         public DatasetController(IDatasetRepository datasetRepository, IWebHostEnvironment hostEnvironment)
         {
-            _datasetRepository = datasetRepository;
+            _datasetRepository = datasetRepository;//构造函数初始化model，model再构造函数初始化数据库
             _hostingEnvironment = hostEnvironment;
         }
         public IActionResult Index()
@@ -46,14 +46,14 @@ namespace CloudeDemmo.Controllers
         }
 
         [HttpGet]
-        public IActionResult Create()
+        public IActionResult Create()//显示Create页面的函数
         {
             Console.WriteLine("===========");
             return View();
         }
 
         [HttpPost]
-        public IActionResult Create(DatasetCreateViewModel model)
+        public IActionResult Create(DatasetCreateViewModel model)//和Create进行交互的函数
         {
             Console.WriteLine("===========");
             if (ModelState.IsValid)
@@ -67,7 +67,7 @@ namespace CloudeDemmo.Controllers
                     Owner = model.Owner,
                     ShortDescription = model.ShortDescription,
                     LongDescription = model.LongDescription,
-                };
+                };//接收网页传来的数据
 
                 // 处理多文件上传
                 if (model.Sets != null && model.Sets.Count > 0)
@@ -78,7 +78,7 @@ namespace CloudeDemmo.Controllers
                     }
                 }
 
-                var newDataset = _datasetRepository.Add(dataset);
+                var newDataset = _datasetRepository.Add(dataset);//把网页传输的数据添加到数据库里面
                 return RedirectToAction("Index");
             }
             return View();
