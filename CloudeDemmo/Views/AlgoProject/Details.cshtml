@@ -1,0 +1,27 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CloudeDemmo.ViewModels.AlgoProjectDetailsViewModel
+
+@{
+}
+
+<h1>@Model.PageTitle</h1>
+<div>
+    ===============================================
+</div>
+
+<div>
+    ===============================================
+</div>
+<div>@Model.AlgoProject.ItemName</div>
+<div>@Model.AlgoProject.Owner</div>
+<div>@Model.AlgoProject.ShortDescription</div>
+<div>@Model.AlgoProject.LongDescription</div>
+
+
+<a asp-controller="AlgoProject" asp-action="TrainPage" asp-route-id=@Model.AlgoProject.Id>训练</a>
+
+
