@@ -8881,11 +8881,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-wlks\\CloudeDemmo\\CloudeDemmo.csproj",
+      "projectUniqueName": "C:\\Users\\kwlover\\Desktop\\wlk\\wlks\\CloudeDemmo\\CloudeDemmo.csproj",
       "projectName": "CloudeDemmo",
-      "projectPath": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-wlks\\CloudeDemmo\\CloudeDemmo.csproj",
+      "projectPath": "C:\\Users\\kwlover\\Desktop\\wlk\\wlks\\CloudeDemmo\\CloudeDemmo.csproj",
       "packagesPath": "C:\\Users\\kwlover\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-wlks\\CloudeDemmo\\obj\\",
+      "outputPath": "C:\\Users\\kwlover\\Desktop\\wlk\\wlks\\CloudeDemmo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kwlover\\AppData\\Roaming\\NuGet\\NuGet.Config",
