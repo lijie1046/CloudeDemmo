@@ -7,7 +7,7 @@
 @{ }
 <head>
     <link rel="stylesheet" href="~/css/styles1.css">
-    
+
     <link rel="stylesheet" href="~/css/bootstrap.min1.css">
     <style>
         body {
@@ -52,57 +52,57 @@
                     <div class="container" id="login">
                         <div class="row justify-content-center">
 
-                                <div class="login">
-                                    <h1>添加数据库</h1>
-                                 
-                                    
-
-                                    <form enctype="multipart/form-data" asp-controller="Dataset" asp-action="Create" method="post">
-
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" id="username" aria-describedby="" asp-for="Name" placeholder="请输入数据集名称（英文）">
-
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="password" asp-for="Owner" placeholder="请输入用户名" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="password" asp-for="ShortDescription" placeholder="请输入简介" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" id="password" asp-for="LongDescription" placeholder="请输入长介绍" />
-                                        </div>
-                                        <input style="width:320px;" asp-for="Sets" , multiple id=" gallery-input" />
-                                        <br>
-
-                                        <div>
-                                            <button type="submit" class="btn btn-lg btn-block btn-success " style="width: 60%; margin: auto;margin-top:15px;">提交</button>
-                                        </div>
+                            <div class="login">
+                                <h1>添加数据库</h1>
 
 
-                                        @section Scripts{
-                                            <script type="text/javascript">
-                                                $(document).ready(function () {
-                                                    $('.custom-file-input').on('change', function () {
-                                                        var fileName = $(this).val().split('\\').pop();
-                                                        $(this).next('.custom-file-label').html(fileName);
-                                                    });
 
-                                                    $('#gallery-input').on('change', function () {
-                                                        var label = $(this).next('#gallery-label');
-                                                        var files = $(this)[0].files;
-                                                        if (files.length > 1) {
-                                                            label.html(`你已经选择了${files.length}个文件`);
-                                                        } else if (files.length == 1) {
-                                                            label.html(files[0].name);
-                                                        }
-                                                    });
-                                                });</script>
-                                        }
-                                        <!-- End Loging form -->
-                                    </form>
-                                </div>
-                            
+                                <form enctype="multipart/form-data" asp-controller="Dataset" asp-action="Create" method="post">
+
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="username" aria-describedby="" asp-for="Name" placeholder="请输入数据集名称（英文）">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password" asp-for="Owner" placeholder="请输入用户名" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password" asp-for="ShortDescription" placeholder="请输入简介" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" id="password" asp-for="LongDescription" placeholder="请输入长介绍" />
+                                    </div>
+                                    <input style="width:320px;" asp-for="Sets" , multiple id=" gallery-input" />
+                                    <br>
+
+                                    <div>
+                                        <button type="submit" class="btn btn-lg btn-block btn-success " style="width: 60%; margin: auto;margin-top:15px;">提交</button>
+                                    </div>
+
+
+                                    @section Scripts{
+                                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                $('.custom-file-input').on('change', function () {
+                                                    var fileName = $(this).val().split('\\').pop();
+                                                    $(this).next('.custom-file-label').html(fileName);
+                                                });
+
+                                                $('#gallery-input').on('change', function () {
+                                                    var label = $(this).next('#gallery-label');
+                                                    var files = $(this)[0].files;
+                                                    if (files.length > 1) {
+                                                        label.html(`你已经选择了${files.length}个文件`);
+                                                    } else if (files.length == 1) {
+                                                        label.html(files[0].name);
+                                                    }
+                                                });
+                                            });</script>
+                                    }
+                                    <!-- End Loging form -->
+                                </form>
+                            </div>
+
                         </div>
                     </div>
 

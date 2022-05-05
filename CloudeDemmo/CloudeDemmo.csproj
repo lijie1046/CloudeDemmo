@@ -13,74 +13,6 @@
     <None Include="wwwroot\Dataset\CWRU\CWRU_train_B.txt" />
     <None Include="wwwroot\Dataset\CWRU\CWRU_train_C.txt" />
     <None Include="wwwroot\Dataset\CWRU\CWRU_train_D.txt" />
-    <None Include="wwwroot\images\.DS_Store" />
-    <None Include="wwwroot\images\8.jpg" />
-    <None Include="wwwroot\images\ab.jpg" />
-    <None Include="wwwroot\images\about.jpg" />
-    <None Include="wwwroot\images\bg.jpg" />
-    <None Include="wwwroot\images\blog_1.jpg" />
-    <None Include="wwwroot\images\blog_2.jpg" />
-    <None Include="wwwroot\images\blog_3.jpg" />
-    <None Include="wwwroot\images\close.png" />
-    <None Include="wwwroot\images\contact2.jpg" />
-    <None Include="wwwroot\images\flaticon\backup.txt" />
-    <None Include="wwwroot\images\flaticon\license\license.pdf" />
-    <None Include="wwwroot\images\flaticon\svg\001-travel.svg" />
-    <None Include="wwwroot\images\flaticon\svg\002-travel-1.svg" />
-    <None Include="wwwroot\images\flaticon\svg\003-travel-2.svg" />
-    <None Include="wwwroot\images\flaticon\svg\004-travel-3.svg" />
-    <None Include="wwwroot\images\flaticon\svg\005-travel-4.svg" />
-    <None Include="wwwroot\images\flaticon\svg\006-food.svg" />
-    <None Include="wwwroot\images\g1.jpg" />
-    <None Include="wwwroot\images\g11.jpg" />
-    <None Include="wwwroot\images\g2.jpg" />
-    <None Include="wwwroot\images\g22.jpg" />
-    <None Include="wwwroot\images\g3.jpg" />
-    <None Include="wwwroot\images\g33.jpg" />
-    <None Include="wwwroot\images\g4.jpg" />
-    <None Include="wwwroot\images\g44.jpg" />
-    <None Include="wwwroot\images\g5.jpg" />
-    <None Include="wwwroot\images\g55.jpg" />
-    <None Include="wwwroot\images\g6.jpg" />
-    <None Include="wwwroot\images\g66.jpg" />
-    <None Include="wwwroot\images\g77.jpg" />
-    <None Include="wwwroot\images\g88.jpg" />
-    <None Include="wwwroot\images\hero_bg_1.jpg" />
-    <None Include="wwwroot\images\icons.png" />
-    <None Include="wwwroot\images\img_1.jpg" />
-    <None Include="wwwroot\images\img_10.jpg" />
-    <None Include="wwwroot\images\img_11.jpg" />
-    <None Include="wwwroot\images\img_12.jpg" />
-    <None Include="wwwroot\images\img_2.jpg" />
-    <None Include="wwwroot\images\img_3.jpg" />
-    <None Include="wwwroot\images\img_4.jpg" />
-    <None Include="wwwroot\images\img_5.jpg" />
-    <None Include="wwwroot\images\img_6.jpg" />
-    <None Include="wwwroot\images\img_7.jpg" />
-    <None Include="wwwroot\images\img_8.jpg" />
-    <None Include="wwwroot\images\img_9.jpg" />
-    <None Include="wwwroot\images\logo_1.jpg" />
-    <None Include="wwwroot\images\logo_2.jpg" />
-    <None Include="wwwroot\images\logo_3.jpg" />
-    <None Include="wwwroot\images\logo_4.jpg" />
-    <None Include="wwwroot\images\logo_5.jpg" />
-    <None Include="wwwroot\images\logo_6.jpg" />
-    <None Include="wwwroot\images\person_1.jpg" />
-    <None Include="wwwroot\images\person_2.jpg" />
-    <None Include="wwwroot\images\person_3.jpg" />
-    <None Include="wwwroot\images\person_4.jpg" />
-    <None Include="wwwroot\images\person_5.jpg" />
-    <None Include="wwwroot\images\person_7.jpg" />
-    <None Include="wwwroot\images\pro6.jpg" />
-    <None Include="wwwroot\images\pro8.jpg" />
-    <None Include="wwwroot\images\ser.jpg" />
-    <None Include="wwwroot\images\up-arrow.png" />
-    <None Include="wwwroot\images\王乐康.png" />
-    <None Include="wwwroot\images\王乐康1.png" />
-    <None Include="wwwroot\images\王乐康2.png" />
-    <None Include="wwwroot\images\王乐康3.png" />
-    <None Include="wwwroot\images\王乐康4.png" />
-    <None Include="wwwroot\images\王乐康5.png" />
     <None Include="wwwroot\js\site.js" />
     <None Include="wwwroot\Project\DANN\.gitignore" />
     <None Include="wwwroot\Project\DANN\CWRU_train_A.txt" />
@@ -105,16 +37,6 @@
     <None Include="wwwroot\Project\DANN\__pycache__\model.cpython-39.pyc" />
     <None Include="wwwroot\Project\DANN\__pycache__\test.cpython-37.pyc" />
     <None Include="wwwroot\Project\DANN\__pycache__\test.cpython-39.pyc" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.4.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.24" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.24">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
   </ItemGroup>
 
 </Project>

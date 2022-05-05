@@ -71,7 +71,7 @@ namespace CloudeDemmo.Controllers
             var path = Path.Combine(filepath, "Project", sArgName, "main.py");
             //string path = System.AppDomain.CurrentDomain.SetupInformation.ApplicationBase + sArgName;// 获得python文件的绝对路径（将文件放在c#的debug文件夹中可以这样操作）
             //path = @"C:\Users\user\Desktop\test\" + sArgName;//(因为我没放debug下，所以直接写的绝对路径,替换掉上面的路径了)
-            p.StartInfo.FileName = @"D:\ProgramData\Anaconda3\envs\pytorch\python.exe";//没有配环境变量的话，可以像我这样写python.exe的绝对路径。如果配了，直接写"python.exe"即可
+            p.StartInfo.FileName = @"python.exe";//没有配环境变量的话，可以像我这样写python.exe的绝对路径。如果配了，直接写"python.exe"即可
             _outCome.Add(p.StartInfo.FileName);
             string sArguments = path;
             foreach (string sigstr in teps)

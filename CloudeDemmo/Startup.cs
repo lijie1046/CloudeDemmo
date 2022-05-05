@@ -1,4 +1,4 @@
-ï»¿using CloudeDemmo.Models;
+using CloudeDemmo.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http.Features;
@@ -10,8 +10,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using CloudeDemmo.Data;
 
 namespace CloudeDemmo
 {
@@ -27,7 +25,7 @@ namespace CloudeDemmo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //ï¿½ï¿½ï¿½Ã½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Èµï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½
+            //ÉèÖÃ½ÓÊÕÎÄ¼þ³¤¶ÈµÄ×î´óÖµ¡£
             services.Configure<FormOptions>(x =>
             {
                 x.ValueLengthLimit = int.MaxValue;
@@ -41,9 +39,6 @@ namespace CloudeDemmo
              
             services.AddSingleton<IDatasetRepository, MockDatasetRepository>();
             services.AddSingleton<IAlgoProjectRepository, MockAlgoProjectRepository>();
-
-            services.AddDbContext<CloudeDemmoContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("CloudeDemmoContext")));
 
         }
 

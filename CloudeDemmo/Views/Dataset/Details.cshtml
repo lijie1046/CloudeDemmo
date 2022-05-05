@@ -7,27 +7,133 @@
 
 
 
+
+<head>
+    <link rel="stylesheet" href="~/css/styles1.css">
+
+    <link rel="stylesheet" href="~/css/bootstrap.min1.css">
+    <style>
+        body {
+            background-image: url('~/wwwroot/images/hero_bg_1.jpg');
+        }
+
+        .nav1 {
+            width: 500px;
+            height: 600px;
+            background-color: rgb(13, 253, 5);
+            opacity: 0.5;
+            margin: 50px auto;
+            border-radius: 50px;
+            border: rgb(0, 0, 0) solid 3px;
+        }
+
+        .nav2 {
+            color: #00B72E;
+            opacity: 0.6;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .file {
+            position: absolute;
+            top: 20px;
+            right: 300px;
+            top: 0;
+            right: 73px;
+            width: 0px;
+            height: 30px;
+            opacity: 0;
+        }
+
+        .nav3 {
+            height: 60px;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-12 text-center align-self-center text-intro">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <h1>@Model.PageTitle</h1>
-                    <div>
-                        ===============================================
+                    <div class="container" id="login">
+                        <div class="row justify-content-center">
+
+                            <div class="login">
+                                <h1>@Model.PageTitle</h1>
+
+
+
+                                <form enctype="multipart/form-data" asp-controller="Dataset" asp-action="Create" method="post">
+
+                                    <div>@Model.Dataset.DataName</div>
+                                    <div>@Model.Dataset.Owner</div>
+                                    <div>@Model.Dataset.ShortDescription</div>
+                                    <div>@Model.Dataset.LongDescription</div>
+                                    @*<p data-aos="fade-up" data-aos-delay="200"><a class="btn smoothscroll btn-primary" asp-controller="AlgoProject" asp-action="TrainPage" asp-route-id=@Model.AlgoProject.Id>训练</a></p>*@
+
+
+                                    @section Scripts{
+                                        <script type="text/javascript">
+                                            $(document).ready(function () {
+                                                $('.custom-file-input').on('change', function () {
+                                                    var fileName = $(this).val().split('\\').pop();
+                                                    $(this).next('.custom-file-label').html(fileName);
+                                                });
+
+                                                $('#gallery-input').on('change', function () {
+                                                    var label = $(this).next('#gallery-label');
+                                                    var files = $(this)[0].files;
+                                                    if (files.length > 1) {
+                                                        label.html(`你已经选择了${files.length}个文件`);
+                                                    } else if (files.length == 1) {
+                                                        label.html(files[0].name);
+                                                    }
+                                                });
+                                            });</script>
+                                    }
+                                    <!-- End Loging form -->
+                                </form>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div>
-                        ===============================================
-                    </div>
-                    <div>@Model.Dataset.DataName</div>
-                    <div>@Model.Dataset.Owner</div>
-                    <div>@Model.Dataset.Owner</div>
-                    <div>@Model.Dataset.ShortDescription</div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
+
+
+
+@*<div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center align-self-center text-intro">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1>@Model.PageTitle</h1>
+                        <div>
+                            ===============================================
+                        </div>
+
+                        <div>
+                            ===============================================
+                        </div>
+                        <div>@Model.Dataset.DataName</div>
+                        <div>@Model.Dataset.Owner</div>
+                        <div>@Model.Dataset.Owner</div>
+                        <div>@Model.Dataset.ShortDescription</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+*@
 

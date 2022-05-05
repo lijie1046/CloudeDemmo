@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kwlover\\Desktop\\wlk\\wlks\\CloudeDemmo\\CloudeDemmo.csproj": {}
+    "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-newMaster\\CloudeDemmo\\CloudeDemmo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kwlover\\Desktop\\wlk\\wlks\\CloudeDemmo\\CloudeDemmo.csproj": {
+    "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-newMaster\\CloudeDemmo\\CloudeDemmo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kwlover\\Desktop\\wlk\\wlks\\CloudeDemmo\\CloudeDemmo.csproj",
+        "projectUniqueName": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-newMaster\\CloudeDemmo\\CloudeDemmo.csproj",
         "projectName": "CloudeDemmo",
-        "projectPath": "C:\\Users\\kwlover\\Desktop\\wlk\\wlks\\CloudeDemmo\\CloudeDemmo.csproj",
+        "projectPath": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-newMaster\\CloudeDemmo\\CloudeDemmo.csproj",
         "packagesPath": "C:\\Users\\kwlover\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kwlover\\Desktop\\wlk\\wlks\\CloudeDemmo\\obj\\",
+        "outputPath": "C:\\Users\\kwlover\\Desktop\\CloudeDemmo-newMaster\\CloudeDemmo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kwlover\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,26 +39,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.24, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[3.1.24, )"
-            },
-            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
-              "target": "Package",
-              "version": "[3.1.5, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
